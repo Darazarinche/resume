@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title> Dara Zarinche achievement</title>\
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="phone.html">Phone</a></li>
+                        <li><a href="Address.html">Address</a></li>
+                        <li><a href="Email.htm">Email</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="mainlogo.png" class="Meta">
+                <div id="circle">
+                    <div class="future one">
+                        <img src="logo1.png">
+                        <h1>HTML and CSS in depth</h1>
+                    </div>
+                    <div class="future two">
+                        <img src="logo2.png">
+                        <h1>UX/UI Design</h1>
+                    </div>
+                    <div class="future three">
+                        <img src="logo3.png">
+                        <h1>Advanced React</h1>
+                    </div>
+                    <div class="future four">
+                        <img src="logo4.png">
+                        <h1>JavaScript</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="up.png" id="upBtn">
+                <h3>Achievements</h3>
+                <img src="down.png" id="downBtn">
+            </div>
+        </div>
+        <script>
+            var circle = document.getElementById("circle")
+            var upBtn = document.getElementById("upBtn")
+            var downBtn = document.getElementById("downBtn")
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+            upBtn.onclick = function(){
+                rotateSum=rotateValue + "rotate(-90deg)"
+                circle.style.transform= rotateSum;
+                rotateValue=rotateSum
+            }
+            downBtn.onclick = function(){
+                rotateSum=rotateValue + "rotate(90deg)"
+                circle.style.transform= rotateSum;
+                rotateValue=rotateSum
+            }
+        </script>
+    </body>
+</html>
